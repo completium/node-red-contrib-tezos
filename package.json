@@ -1,0 +1,36 @@
+{
+  "author": {
+    "name": "Benoît Rognier",
+    "email": "benoit.rognier@edukera.com"
+  },
+  "bugs": {
+    "url": "https://github.com/edukera/node-red-contrib-tezos/issues/"
+  },
+  "dependencies": {
+    "@taquito/taquito": "^6.3.2-beta.0",
+    "conseiljs": "^0.4.3"
+  },
+  "description": "Tezos nodes for node-red",
+  "homepage": "https://github.com/edukera/node-red-contrib-tezos",
+  "keywords": [
+    "tezos",
+    "node-red"
+  ],
+  "license": "MIT",
+  "name": "node-red-contrib-tezos",
+  "node-red": {
+    "nodes": {
+      "originate": "nodes/originate.js",
+      "call-contract": "nodes/call-contract.js",
+      "get-contract": "nodes/get-contract.js",
+      "transfer": "nodes/transfer.js",
+      "generate-keys": "nodes/generate-keys.js",
+      "confirm": "nodes/confirm.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edukera/node-red-contrib-tezos.git"
+  },
+  "version": "0.1.0"
+}
