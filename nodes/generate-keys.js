@@ -12,12 +12,12 @@ module.exports = function(RED) {
         var node = this;
         node.on('input', function(msg) {
             // overwrite node parameter with payload data
-            if (Array.isArray(msg.payload) && 'mnemonic' in msg.payload) {
+            if (typeof msg.payload === "object" &&  'mnemonic' in msg.payload) {
                 try {
                     var obj = JSON.parse(msg.payload.mnemonic);
                     node.mnemonic = obj.mnemonic.join(' ');
                 } catch (e) { }
-            } else if (Array.isArray(node) && 'mnemonic' in node) {
+            } else if (typeof node === "object" &&  'mnemonic' in node) {
                 // do nothing
             } else {
                 node.mnemonic = TezosWalletUtil.generateMnemonic();

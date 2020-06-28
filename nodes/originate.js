@@ -21,7 +21,7 @@ module.exports = function(RED) {
         var withInit = false;
         node.on('input', function(msg) {
             // overwrite node parameter with payload data
-            if (Array.isArray(msg.payload) && 'faucet' in msg.payload) {
+            if (typeof msg.payload === "object" && 'faucet' in msg.payload) {
                 try {
                     var obj = JSON.parse(msg.payload.faucet);
                     node.email = obj.email;
@@ -30,17 +30,17 @@ module.exports = function(RED) {
                     node.secret = obj.secret;
                 } catch (e) { }
             }
-            if (Array.isArray(msg.payload) && 'code' in msg.payload) {
+            if (typeof msg.payload === "object" && 'code' in msg.payload) {
                 node.code = msg.payload.code;
             }
-            if (Array.isArray(msg.payload) && 'storage' in msg.payload) {
+            if (typeof msg.payload === "object" && 'storage' in msg.payload) {
                 node.storage = msg.payload.storage;
-            } else if (Array.isArray(msg.payload) && 'init' in msg.payload) {
+            } else if (typeof msg.payload === "object" && 'init' in msg.payload) {
                 withInit = true;
                 node.init = msg.payload.init;
             }
             var provider = { rpc: node.rpc };
-            if (Array.isArray(msg.payload) && 'secret' in msg.payload) {
+            if (typeof msg.payload === "object" && 'secret' in msg.payload) {
                 provider.signer = new InMemorySigner(msg.payload.secret);
                 Tezos.setProvider(provider);
             } else {

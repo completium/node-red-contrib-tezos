@@ -8,7 +8,7 @@ module.exports = function (RED) {
         this.confirmation = config.confirmation;
         var node = this;
         node.on('input', function (msg) {
-            if ('op' in msg.payload) {
+            if (typeof msg.payload === "object" && 'op' in msg.payload) {
                 var op = msg.payload.op;
                 Tezos.setProvider({ rpc: node.rpc });
                 console.log(`Waiting for ${op.hash} to be confirmed...`);
