@@ -7,11 +7,12 @@
     "@taquito/taquito": "^6.3.2-beta.0",
     "conseiljs": "^0.4.3"
   },
-  "description": "Tezos nodes for node-red",
+  "description": "Nodes to interact with the Tezos blockchain",
   "homepage": "https://github.com/edukera/node-red-contrib-tezos",
   "keywords": [
     "tezos",
-    "node-red"
+    "node-red",
+    "blockchain"
   ],
   "license": "MIT",
   "name": "@chaintelligence/node-red-contrib-tezos",
@@ -29,7 +30,7 @@
     "type": "git",
     "url": "git+https://github.com/edukera/node-red-contrib-tezos.git"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
