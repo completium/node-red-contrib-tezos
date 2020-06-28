@@ -1,8 +1,5 @@
 {
-  "author": {
-    "name": "Benoît Rognier",
-    "email": "benoit.rognier@edukera.com"
-  },
+  "author": "Benoît Rognier <benoit.rognier@edukera.com>",
   "bugs": {
     "url": "https://github.com/edukera/node-red-contrib-tezos/issues/"
   },
@@ -17,7 +14,7 @@
     "node-red"
   ],
   "license": "MIT",
-  "name": "node-red-contrib-tezos",
+  "name": "@chaintelligence/node-red-contrib-tezos",
   "node-red": {
     "nodes": {
       "originate": "nodes/originate.js",
@@ -32,5 +29,10 @@
     "type": "git",
     "url": "git+https://github.com/edukera/node-red-contrib-tezos.git"
   },
-  "version": "0.1.0"
+  "version": "0.2.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
