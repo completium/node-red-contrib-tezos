@@ -11,7 +11,7 @@ This package provides the following node-red nodes to interact with the Tezos bl
 * get-contrat
 * confirm
 
-> The RPC provider is set in the configuration panel of the node.
+> The RPC provider is set in the configuration panel of the nodes.
 
 ## transfer
 Transfers Tezis from an account to another.
