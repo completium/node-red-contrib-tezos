@@ -133,6 +133,7 @@ If fail:
 
 ## generate-keys
 Generates keys for a new account.
+
 | Parameter        | Desc           | Msg.payload entry  |
 | ------------- |:-------------:| -----:|
 | Mnemonic      | List of mnemonic words (optional) | mnemonic |
