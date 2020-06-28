@@ -1,4 +1,4 @@
-<center> <img src="icons/tezos-logo.png" alt="Tezos logo"  height="100"> </center>
+<center> <img src="nodes/icons/tezos-logo.png" alt="Tezos logo"  height="100"> </center>
 
 # Tezos nodes for node-red
 [Tezos](https://tezos.com/) is an open-source blockchain for assets and applications that can evolve by upgrading itself. Stakeholders govern upgrades to the core protocol, including upgrades to the amendment process itself.
