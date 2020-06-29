@@ -1,6 +1,6 @@
-<center> <img src="nodes/icons/tezos-logo.png" alt="Tezos logo"  height="100"> </center>
+<center> <img src="nodes/icons/tezos-logo.png" alt="Tezos logo"  height="100" style="padding-top:50px"> </center>
 
-# Tezos nodes for node-red
+# node-red nodes for Tezos
 [Tezos](https://tezos.com/) is an open-source blockchain for assets and applications that can evolve by upgrading itself. Stakeholders govern upgrades to the core protocol, including upgrades to the amendment process itself.
 
 This package provides the following node-red nodes to interact with the Tezos blockchain:
@@ -183,4 +183,6 @@ The `generate-key` node uses the [Conseiljs](https://cryptonomic.github.io/Conse
 Developped by
 
 <img src="nodes/icons/Chaintelligence-logo-black.png" height="80">
+
+a service by [edukera](www.edukera.com).
 
