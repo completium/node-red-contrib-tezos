@@ -180,7 +180,7 @@ All nodes except `generate-keys` use the [Taquito](https://tezostaquito.io/) lib
 
 The `generate-key` node uses the [Conseiljs](https://cryptonomic.github.io/ConseilJS/#/) library.
 
-> Developped by [edukera](www.edukera.com)
+Developped by
 
-
+<img src="nodes/icons/Chaintelligence-logo-black.png" height="80">
 
